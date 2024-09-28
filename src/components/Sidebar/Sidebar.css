@@ -1,0 +1,99 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 220vh;
+  background: #333e48;
+  /* z-index: 2; */
+  /* background-color: ; */
+}
+.sidebar-content {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.sidebar-container {
+  position: absolute;
+}
+
+.our-showroom-button {
+  /* padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px; */
+  /* color: white; */
+  border: none;
+  cursor: pointer;
+  
+  /* border-radius: 12px;
+  background: rgba(217, 217, 217, 0.2); */
+}
+.our-showroom-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.monitor-container {
+  margin-top: 20px;
+  display: flex;
+  /* justify-content: center; */
+  padding-left: 55px;
+  align-items: center;
+}
+
+.registry-container {
+  margin-top: 20px;
+  display: flex;
+  /* justify-content: center; */
+  margin-right: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropdown-arrow {
+  margin-left: 8px;
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.dropdown-arrow.up {
+  transform: rotate(180deg);
+}
+.dropdown-arrow.down {
+  transform: rotate(180deg);
+}
+
+.registry-dropdown {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  /* padding-left: 96px; */
+}
+
+.registry-dropdown label {
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 47px;
+  cursor: pointer;
+}
+
+.listing-container {
+  margin-top: 20px;
+  display: flex;
+  /* justify-content: center; */
+  padding-left: 54px;
+  align-items: center;
+}
+.redirect-container {
+  margin-top: 30px;
+  display: flex;
+  /* justify-content: center; */
+  margin-right: 20px;
+  align-items: center;
+  flex-direction: column;
+}

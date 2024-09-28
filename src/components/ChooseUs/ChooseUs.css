@@ -1,0 +1,232 @@
+.chooseUs {
+    padding: 40px 80px;
+  }
+  
+  .chooseUs-img img {
+    width: 100%;
+  }
+  
+  .chooseUs-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .chooseUs-content {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .chooseUs-img {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+  }
+  
+  .chooseUs-img img {
+    width: 700px;
+  }
+  
+  .chooseUs-content div:hover {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+    width: 524px;
+  }
+  
+  .chooseUs-content div:hover h3,
+  .chooseUs-content div:hover p, 
+  .chooseUs-content div:hover span {
+    color: #222831;
+  }
+  
+  .chooseUs h1 {
+    color: #222831;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chooseUs p {
+    color: #393E46;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    width: 915px;
+    margin: auto;
+  }
+  
+  .chooseUs-content div h3 {
+    color: rgba(57, 62, 70, 0.50);
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    margin-bottom: 0px;
+    
+  }
+  
+  .chooseUs-content div h3 span {
+    color: rgba(57, 62, 70, 0.50);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
+  }
+  
+  .chooseUs-content div p {
+    color: rgba(57, 62, 70, 0.50);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  
+  .chooseUs-content h3 {
+    color: #222831;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+    width: 497px;
+  }
+  
+  .chooseUs-content div {
+    padding: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .chooseUs-content h3,
+  .chooseUs-content div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out; /* Slower transition */
+  }
+  
+  .chooseUs.animate .chooseUs-content h3,
+  .chooseUs.animate .chooseUs-content div {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .chooseUs-content div:nth-child(2) {
+    transition-delay: 0.4s;
+  }
+  
+  .chooseUs-content div:nth-child(3) {
+    transition-delay: 0.8s;
+  }
+  
+  .chooseUs-content div:nth-child(4) {
+    transition-delay: 1.2s;
+  }
+  
+  .chooseUs-content div:nth-child(5) {
+    transition-delay: 1.6s;
+  }
+  
+  .chooseUs-content div:nth-child(6) {
+    transition-delay: 2s;
+  }
+  @media (min-width: 1181px) and (max-width: 1400px) {
+    .chooseUs-img img {
+      width: 580px;
+    }
+  }
+  @media (max-width: 768px) {
+    .chooseUs {
+      padding: 24px 16px;
+      padding-bottom: 8px;
+    }
+    
+    .chooseUs h1 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    
+    .chooseUs p {
+      font-size: 12px;
+      width: 100%;
+    }
+    
+    .chooseUs-content h3 {
+      font-size: 20px;
+      width: 100%;
+    }
+    
+    .chooseUs-card {
+      margin-top: 16px;
+    }
+    
+    .chooseUs-content {
+      width: 100%;
+    }
+    
+    .chooseUs-img {
+      display: none;
+    }
+    
+    .chooseUs-content div h3 {
+      font-size: 20px;
+    }
+    
+    .chooseUs-content div h3 span {
+      font-size: 16px;
+      color: #222831;
+    }
+    
+    .chooseUs-content div p {
+      font-size: 10px;
+      color: #222831;
+      width: 100%;
+    }
+    
+    .chooseUs-content div {
+      width: auto;
+      border-radius: 16px;
+      background: #FFF;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .chooseUs-content div:hover {
+      width: auto;
+    }
+    
+    .chooseUs-content div h3 {
+      color: #222831;
+    }
+    
+    .chooseUs-content div {
+      padding: 10px;
+      margin-bottom: 16px;
+    }
+    .chooseUs svg {
+      width: 70px; /* Set the SVG width to 70px on mobile view */
+    }
+  }
+  

@@ -1,0 +1,111 @@
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.contact-form h4 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-service-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-service-buttons  button {
+    background-color: white;
+    color:  #22A8B3;
+    border: 1px solid #22A8B3;;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-service-buttons button.active {
+    background: #22A8B3;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+
+}
+
+.form-group input,
+.form-group select {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    margin: 5px;
+    color: grey;
+}
+
+.form-group input[type="tel"] {
+    width: 50%;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.privacy-policy {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.privacy-policy p{
+    width: 100%;
+    text-align: left;
+}
+
+
+
+
+@media (max-width: 768px) {
+.contact-service-buttons {
+    display: block;
+}
+.form-group input, .form-group select {
+    width: 100%;
+}
+.form-group {
+    width: 100%;
+    flex-direction: column;
+}
+.form-group input[type="tel"] {
+    width: 100%;
+}
+.privacy-policy {
+    margin-top: 20px;
+    display: block;
+    height: 40px;
+    margin-bottom: 55px;
+}
+.contact-service-buttons button{
+    font-size: 12px;
+}
+.privacy-policy p {
+    width: 100%;
+}
+}

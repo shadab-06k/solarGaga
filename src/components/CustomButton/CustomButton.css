@@ -1,0 +1,61 @@
+.customButton {
+    width: 45px;
+    height: 45px;
+    background: #333E48;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .arrow {
+    border: solid #fff;
+    color: #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+  }
+  
+  .customButton:hover {
+    width: 160px;
+    background: linear-gradient(to right, #333E48, rgb(109, 109, 109));
+  }
+  
+  .customButton:hover .arrow {
+    display: none;
+  }
+  
+  .customButton .customButton-text {
+    display: none;
+  }
+  
+  .customButton:hover .customButton-text {
+    display: flex;
+    font-size: 16px;
+    font-weight: 550;
+    color: #fff;
+    letter-spacing: 0.6px;
+    animation: anima 0.6s ease;
+  }
+  
+  @keyframes anima {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .customButton:active {
+    background: linear-gradient(to right, rgba(51, 62, 72,0.8), rgba(173, 173, 173, 0.8));
+  }
+  

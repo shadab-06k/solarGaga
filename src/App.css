@@ -1,0 +1,43 @@
+/* App.css */
+
+/* App layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  height: 60px;
+  flex-shrink: 0;
+}
+
+/* Main content area */
+.main-content-area {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 60px); /* Adjust according to the height of the navbar */
+  overflow: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 100%;
+  position: fixed;
+}
+
+/* Center content styles */
+.center-content {
+  flex-grow: 1;
+  margin-left: 250px; /* Leave space for the sidebar */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}

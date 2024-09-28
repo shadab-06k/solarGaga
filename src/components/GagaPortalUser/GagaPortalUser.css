@@ -1,0 +1,259 @@
+.gaga-container {
+  padding: 40px 80px;
+  overflow-x: hidden;
+}
+
+.gaga-title {
+  color: #222831;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  margin-bottom: 66px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gaga-subtitle {
+  text-align: left;
+  color: #393e46;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.gaga-users {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.gaga-users p {
+  color: #fff;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #333e48;
+  margin-bottom: 0px;
+  padding: 15px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.gaga-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.gaga-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* position: relative;
+  overflow: hidden; */
+}
+
+.gaga-image {
+  width: 50%;
+  height: 450px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out, visibility 0s 0.9s;
+}
+
+.gaga-image-left {
+  transform: translateX(-100%);
+}
+
+.gaga-image-right {
+  transform: translateX(100%);
+}
+
+.gaga-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out, visibility 0s 0.9s;
+  padding: 20px;
+}
+
+.gaga-text-left {
+  transform: translateX(-100%);
+}
+
+.gaga-text-right {
+  transform: translateX(100%);
+}
+
+.gaga-image-left.show,
+.gaga-image-right.show,
+.gaga-text-left.show,
+.gaga-text-right.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out, visibility 0s;
+}
+
+.gaga-section .gaga-text h2,
+.gaga-section .gaga-text h3 {
+  color: #222831;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.gaga-section .gaga-text p {
+  color: #393e46;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.gaga-section .gaga-text h3 {
+  margin-top: 32px;
+}
+
+.gaga-users p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.gaga-users p:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.gaga-users p:nth-child(3) {
+  animation-delay: 1s;
+}
+.gaga-users p:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.gaga-users p:nth-child(5) {
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1180px) {
+  .gaga-users p {
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1181px) and (max-width: 1400px) {
+  .gaga-users p {
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gaga-container {
+    padding: 24px 16px;
+  }
+
+  .gaga-users {
+    flex-direction: column;
+    gap: 38px;
+    margin-bottom: 24px;
+  }
+
+  .gaga-section {
+    flex-direction: column;
+  }
+
+  .gaga-section .gaga-image {
+    width: 100%;
+    height: 250px;
+    transform: translateX(0);
+  }
+
+  .gaga-section .gaga-text {
+    width: 100%;
+    transform: translateX(0);
+    margin-top: 10px;
+  }
+
+  .gaga-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  svg {
+    width: 33px;
+  }
+
+  .gaga-subtitle {
+    font-size: 16px;
+  }
+  
+  .gaga-users p:nth-child(2) {
+    display: none;
+  }
+  
+  .gaga-users p:nth-child(4) {
+    display: none;
+  }
+  
+  .gaga-users p {
+    font-size: 12px;
+  }
+  
+  .gaga-section .gaga-text h2, .gaga-section .gaga-text h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .gaga-section .gaga-text h3 {
+    margin-top: 16px;
+  }
+  
+  .gaga-section .gaga-text p {
+    font-size: 12px;
+  }
+  
+  .gaga-card2 {
+    flex-direction: column-reverse;
+  }
+  
+  .gaga-content {
+    gap: 24px;
+  }
+}

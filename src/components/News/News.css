@@ -1,0 +1,191 @@
+.news-section {
+  padding: 24px 80px;
+  text-align: center;
+}
+
+.news-section h1 {
+  color: #222831;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-section p{
+  width: 750px;
+  margin: auto;
+  margin-bottom: 40px;
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+.news-section h5 {
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+}
+.news-section h5 span{
+  border-radius: 6px;
+    background: #393E46;
+    display: flex;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+}
+
+.news-card {
+  position: relative; /* Make the card a positioned container */
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  height: 400px;
+}
+
+.news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-content {
+  position: absolute; /* Position it absolutely within the news-card */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: rgba(41, 41, 41, 0.36);
+  /* backdrop-filter: blur(2.617347002029419px); */
+  color: #fff;
+}
+
+.news-content h2 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+text-align: left;
+}
+
+.news-content p {
+  color: #eee;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.pagination button {
+  border: 1px solid #393E46;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #393E46;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 30px;
+  width: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination button:hover {
+  background-color: #393E46;
+  color:#fff ;
+}
+
+.pagination .page-number {
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #393E46;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #393E46;
+}
+
+.pagination .page-number.active {
+  background-color: #393E46;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .news-section {
+    padding: 24px 16px;
+  }
+  .news-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .news-card {
+    height: 376px;
+  }
+  .news-card svg{
+    width: 70px;
+  }
+  .news-section h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .news-section svg{
+    width: 63px;
+  }
+  .news-section p {
+    font-size: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .news-grid{
+    padding: 0px 8px;
+  }
+  .news-content h2 {
+    font-size: 20px;
+  }
+  .news-content{
+    padding: 16px;
+  }
+  .news-section h5 {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .pagination .page-number {
+    font-size: 14px;
+  }
+  .pagination button{
+    height: 25px;
+    width: 25px;
+    font-size: 12px;
+  }
+}

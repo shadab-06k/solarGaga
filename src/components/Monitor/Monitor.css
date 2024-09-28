@@ -1,0 +1,169 @@
+.Monitor-full-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 100px;
+    padding-right: 80px;
+  }
+  
+  .monitor-main-container {
+    width: 100%;
+    padding-right: 0px;
+
+  }
+  .monitor-main-container h2{
+    color: #222831;
+
+font-family: Lato;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 12px;
+  }
+  .monitor-main-container h6{
+    color: #222831;
+
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  .customize-main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 300px;
+  }
+  .customize-div h5{
+    color: #000;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11.406px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #F5F5F5;
+    margin-bottom: 0px;
+  }
+  .monitor-upper {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 40px;
+    margin-top: 51px;
+    padding-left: 300px;
+  }
+  canvas{
+    width: 80%;
+  }
+  .monitor-inner-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+  
+  .monitor-inner-div-card {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 200px;
+    width: 300px;
+    padding-right: 20px;
+  }
+  
+  .card-icon {
+    width: 94px;
+    height: 81px;
+    border-top-right-radius: 66px;
+    background-color: #f1f1f1;
+   display: flex;
+   align-self: baseline;
+   align-items: center;
+    justify-content: center;
+    
+  }
+  .card-icon img{
+    width: 60px;
+  }
+  .monitor-inner-div-card h3{
+    color: #000;
+    font-size: 42px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
+  }
+  .monitor-inner-div-card p{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.52px;
+  }
+  .sun {
+    background:#FFF1D3;
+
+  }
+  
+  .panel {
+    background:#E6EDFF;
+  }
+  
+  .battery {
+    background:#ECECEC;
+  }
+  
+  .consumption {
+    background:#FFE3DD;
+  }
+  
+  .photograph-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .performance-text {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #7f8c8d;
+    text-align: center;
+  }
+  
+  .details-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #7f8c8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .details-button:hover {
+    background-color: #576574;
+  }
+  .photograph-container h3{
+    color: #2E2E30;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 16px;
+  }

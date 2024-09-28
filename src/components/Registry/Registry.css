@@ -1,0 +1,79 @@
+.register-container {
+  margin-top: 130px;
+  margin-left: 320px;
+  /* height: 220vh; */
+  width: 72%;
+}
+.icons-container {
+  /* margin-top: 30px; */
+}
+.car-card-1 {
+  height: 147px;
+  width: 186px;
+  padding-left: 41px;
+  padding-right: 36px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.car-card-1:hover svg path {
+  fill: white;
+}
+.car-card-1:hover {
+  background: #494b4c;
+}
+.car-image {
+  height: 318px;
+  width: 490px;
+
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.car-image {
+  /* width: 100%; */
+  height: auto;
+  display: block;
+}
+
+.heading-overlay {
+  position: absolute;
+  top: 10px; /* Adjust this value to move the heading up or down */
+  left: 50%;
+  transform: translateX(-50%);
+  color: black; /* You can change the color based on the image */
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px; /* Optional: add padding for better visibility */
+}
+
+.heading-env {
+  font-weight: 700;
+}
+.customize-div h5 {
+  color: #000;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11.406px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  margin-bottom: 0px;
+}
+.button-cust {
+  border-radius: 10px;
+  background: #f5f5f5;
+}

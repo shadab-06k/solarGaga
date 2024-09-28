@@ -1,0 +1,205 @@
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.ourTeam {
+  padding: 40px 80px;
+  background-image: url(../../assets/ourNetwork-bg.png);
+  background-repeat: no-repeat;
+  overflow: hidden; /* Hide overflow */
+}
+
+.ourTeam-cards {
+  display: flex;
+  margin-top: 40px;
+  gap: 40px;
+  overflow: hidden; /* Hide overflow */
+  padding: 20px;
+}
+
+.ourTeam-card {
+  position: relative; /* Make the card a positioned container */
+  width: 31%;
+  height: 566px;
+  text-align: left;
+  padding: 24px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  gap: 24px;
+  background: #FFF;
+  box-shadow: 0px 2.874px 17.246px -0.719px rgba(0, 0, 0, 0.20);
+  opacity: 0; /* Start hidden */
+  transform: translateY(0); /* Initial transform position */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.ourTeam-card0.animate {
+  animation: slideInFromTop 1s forwards;
+}
+
+.ourTeam-card1.animate {
+  animation: slideInFromBottom 1s forwards;
+}
+
+.ourTeam-card2.animate {
+  animation: slideInFromTop 1s forwards;
+}
+
+.ourTeam-card:hover {
+  background: #FFF;
+  box-shadow: 0px 2.874px 17.246px -0.719px rgba(0, 0, 0, 0.4);
+}
+
+.ourTeam-card .img2 {
+  width: 50px;
+  margin-left: 0px;
+}
+
+.ourTeam h1 {
+  color: #222831;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.ourTeam-card h2 {
+  color: #1C1F35;
+  font-family: Merriweather;
+  font-size: 24.246px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.485px;
+  margin-bottom: 8px;
+}
+
+.ourTeam-card p {
+  color: #737373;
+  /* white-space: pre; */
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 22.401px */
+  letter-spacing: -0.358px;
+  margin-bottom: 32px;
+}
+
+.ourTeam-card h5 {
+  color: #1C1F35;
+  font-family: Merriweather;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  margin-bottom: 16px;
+}
+.ourTeam-img{
+  width: 100%;
+  height: 236px;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .ourTeam {
+    padding: 24px 16px;
+  }
+
+  .ourTeam h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .ourTeam p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .ourTeam-cards {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    align-items: center;
+    padding: 0px;
+    padding-bottom:5px;
+  }
+
+  .ourTeam-card {
+    width: 100%;
+    padding: 16px;
+    padding-bottom: 0px;
+    width: 305px;
+    height: 348px;
+  }
+
+  .ourTeam-card h2 {
+    font-size: 20px;
+  }
+
+  .ourTeam-card0.animate, .ourTeam-card1.animate, .ourTeam-card2.animate {
+    animation: none;
+    opacity: 1; /* Ensure the cards are visible */
+    transform: translateY(0); /* Ensure the cards are in the correct position */
+  }
+  .ourTeam-card svg:first-of-type{
+    width: 50px;
+    height: 50px;
+  }
+  .ourTeam-card svg:last-of-type{
+    width: 10px;
+    height: 10px;
+  }
+  .ourTeam-card .img2{
+    width: 38px;
+    position: absolute;
+    right: 15px;
+    top: 222px;
+    margin-left: 0px;
+}
+.ourTeam-img{
+  width: 100%;
+  height: 198px;
+  margin-bottom: 5px;
+}
+.ourTeam-card h5 {
+  margin-bottom: 8px;
+}
+}

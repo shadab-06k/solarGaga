@@ -1,0 +1,236 @@
+.testimonial{
+    background-color: #F5F5F5;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+.testimonial h1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;
+    color: #222831;
+
+font-family: Lato;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.6px;
+margin-bottom: 24px;
+}
+.testimonial h5{
+margin: auto;
+    color: #393E46;
+text-align: center;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.72px;
+width: 915px;
+
+}
+.testimonial h6{
+    margin-bottom: 20px;
+}
+.swiper-container {
+  border-radius: 5px;
+  margin: 40px 80px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  height: fit-content;
+  font-size: 50px;
+  position: relative;
+  padding: 10px 0px
+}
+
+.swiper-slide {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px;
+  background-color: #F9F9F9;
+  border-radius: 16px;
+  
+
+}
+.swiper-slide-active{
+    box-shadow: 0px 1.874px 16.246px -0.719px rgba(0, 0, 0, 0.10);
+}
+.swiper-slide-active .ImgHolder, .swiper-slide-active .ContentHolder {
+    background-color: #fff; 
+ 
+  }
+.swiper-slide-prev .ImgHolder, .swiper-slide-prev .ContentHolder, .swiper-slide-next .ContentHolder, .swiper-slide-next .ImgHolder {
+    background-color: #fff;
+    /* box-shadow: 0px 1.874px 16.246px -0.719px rgba(255, 255, 255, 0); */
+  }
+  .swiper-3d {
+    perspective: 821px;
+}
+.ImgHolder {
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+
+.ContentHolder {
+  position: relative;
+  padding: 40px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #F9F9F9;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+
+.swiper-slide img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto;
+  object-fit: cover;
+  border: 3px solid #222831;
+  outline: 2px solid white;
+}
+
+.swiper-slide h3 {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.swiper-slide p {
+  font-size: 16px;
+  padding: 5px;
+}
+.ContentHolder p span:first-of-type{
+    color: #222831;
+font-family: Lora;
+font-size: 98px;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+position: absolute;
+top: 4px;
+left: 12px;
+}
+.ContentHolder p span:nth-of-type(2){
+    color: #222831;
+    font-family: Lora;
+    font-size: 98px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    position: absolute;
+}
+@media (max-width: 638px) {
+  .swiper-container {
+    width: 100%;
+    margin: auto;
+  }
+  .testimonial h5{
+
+    width: 100%;
+    
+    }
+}
+
+@media (max-width: 768px) {
+  .swiper-container {
+    width: 80vw;
+  }
+  .testimonial {
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .testimonial h1{
+    color: #222831;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px;
+  }
+.testimonial svg{
+    width: 63px;
+}
+.testimonial h5{
+    color: #393E46;
+text-align: center;
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.4px;
+padding-left: 16px;
+padding-right: 16px;
+margin-bottom: 16px;
+}
+.ContentHolder {
+    padding: 10px;
+}
+.swiper-slide p {
+    font-size: 9px;
+    margin-bottom: 0px;
+  }
+  .swiper-slide img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+  }
+  .swiper-slide h3 {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+  .testimonial h6 {
+    margin-bottom: 10px;
+    font-size: 8px;
+}
+.ContentHolder p span:first-of-type{
+font-size: 35px;
+left: 0px;
+top: 4px;
+}
+.ContentHolder p span:nth-of-type(2){
+    font-size: 35px;
+}
+  }
+
+
+@media (max-width: 300px) {
+  .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    border-radius: 0px;
+  }
+
+  .ImgHolder {
+    border-radius: 0px;
+  }
+  
+  .ContentHolder {
+    border-radius: 0px;
+  }
+
+}

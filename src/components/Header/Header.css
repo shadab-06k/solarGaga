@@ -1,0 +1,785 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 108px;
+  /* background-color: linear-gradient(0deg, rgba(51, 62, 72, 0.40) 0%, rgba(51, 62, 72, 0.40) 100%), url(<path-to-image>) #333E48 50% / cover no-repeat;; */
+}
+
+.header-mainCard {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 15px 24px;
+  margin-left: 0; /* Ensure it aligns to the left */
+}
+
+.header-mainCard h1 {
+  color: #C9C9C9;
+  text-align: left;
+  font-family: Lato;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 21px;
+}
+
+.header-mainCard p {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 17.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.exchange-card, .portal-card {
+  border-radius: 20px;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.portal-card video, .exchange-card video {
+  width: 100%;
+  height: 84px; 
+  object-fit: cover; 
+  border-radius: 20px 20px 0 0;
+}
+
+.portal-card .card-body, .exchange-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: left;  */
+  width: 100%; 
+  border-radius: 0 0 20px 20px;
+  border: 2px solid #FFF;
+  border-top: 0;
+  background: rgba(34, 40, 49, 0.8);
+  color: #fff;
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.portal-card h5, .exchange-card h5 {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.portal-card p, .exchange-card p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 13px;
+  background: #222831;
+  width: 156px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-card span, .exchange-card span {
+  display: none;
+}
+ .portal-card:hover span, .exchange-card:hover span{
+display: block;
+}
+.portal-exchange {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align children to the left */
+  gap: 2%; /* Add a gap between the cards */
+  margin-top: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.left-div {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align children to the left */
+}
+
+.header1 {
+  padding: 120px 80px;
+  padding-bottom: 40px;
+  background:  linear-gradient(to right, 
+  rgba(0, 0, 0, 0) 0%, 
+  rgba(0, 0, 0, 0) 25%, 
+  rgba(0, 0, 0, 0) 50%, 
+  rgba(0, 0, 0, 0) 75%, 
+  rgba(0, 0, 0, 0) 100%), #333E48 100% / cover no-repeat;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Align button to the left */
+  margin-top: 20px; /* Add some space between content and button */
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #393E46;
+  border: 1px solid #333;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-header p {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  margin-bottom: 44px;
+}
+
+.card-body img {
+  height: 16px;
+  background: #fff;
+  border-radius: 100px;
+  margin-left: 8px;
+  padding: 3px;
+  margin-top: 2px;
+}
+
+.carousel-wrapper-react {
+  --width: 100px;
+  --gap: 0;
+  --num-items: 10;
+  --ani-offset: calc(var(--width) * var(--num-items) * -1);
+  --ani-speed: 10s;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-right: 88px;
+  padding-left: 88px;
+}
+
+.carousel-wrapper-react::before,
+.carousel-wrapper-react::after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.carousel-wrapper-react::before {
+  left: 0;
+  background-image: linear-gradient(to right, var(--bg-clr) 0%, transparent 50%);
+}
+
+.carousel-wrapper-react::after {
+  right: 0;
+  background-image: linear-gradient(to left, var(--bg-clr) 0%, transparent 50%);
+}
+
+.carousel-react {
+  display: flex;
+  align-items: center;
+  animation: slide-react var(--ani-speed) linear infinite;
+}
+
+.item-react {
+  flex: 1 0 var(--width);
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.item-react-3>img{
+  height: 61px;
+  flex: 1 0 var(--width);
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.item-react > img {
+  
+  height: 81px;
+  object-fit: cover;
+}
+
+.portal-card, .exchange-card {
+  border-radius: 20px;
+  width: 47%;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: hidden; 
+  position: relative; 
+}
+.right-div {
+  position: relative;
+  width: 50%;
+  height: 500px;
+}
+.right-div img {
+  position: relative;
+  width: 552px;
+  height: 550px;
+  position: relative;
+  right: -66px;
+  z-index: 0; 
+}
+
+.right-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 37px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, 
+  rgba(0, 0, 0, 0) 0%, 
+  rgba(0, 0, 0, 0) 25%, 
+  rgba(0, 0, 0, 0) 50%, 
+  rgba(0, 0, 0, 0) 75%, 
+  rgba(0, 0, 0, 0) 100%),  #333E48 100% / cover no-repeat;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+
+.portal-card .card-body, .exchange-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  border-radius: 0 0 20px 20px;
+  border: 2px solid #FFF;
+  border-top: 0;
+  background: rgba(34, 40, 49, 0.8);
+  color: #fff;
+  padding: 0;
+  padding-bottom: 16px;
+  transition: all 0.3s ease; 
+  position: absolute; 
+  bottom: 0;
+  height: 125px;
+}
+
+.portal-card:hover .card-body, .exchange-card:hover .card-body {
+  height: 100%; 
+}
+
+.portal-card .card-title, .exchange-card .card-title {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  transition: all 0.6s ease;
+}
+
+.portal-card:hover .card-title, .exchange-card:hover .card-title {
+  margin-top: 10px; 
+}
+
+.portal-card span, .exchange-card span {
+  display: none;
+  color: #F5F5F5;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+
+}
+
+.portal-card:hover span, .exchange-card:hover span {
+  display: block;
+ 
+}
+
+.portal-card video, .exchange-card video {
+  width: 100%;
+  height: 84px; 
+  object-fit: cover; 
+  border-radius: 20px 20px 0 0;
+  transition: opacity 0.6s ease; 
+  position: absolute;
+    top: 0px;
+}
+
+.portal-card:hover video, .exchange-card:hover video {
+  opacity: 0; /* Hide video on hover */
+}
+
+.portal-exchange {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+  gap: 5%; 
+  margin-top: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+@keyframes slide-react {
+  100% {
+    transform: translateX(var(--ani-offset));
+  }
+}
+.animated-letter {
+  color: grey;
+  animation: colorChangeForwards 0.5s forwards;
+}
+
+@keyframes colorChangeForwards {
+  0% {
+    color: grey;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes colorChangeBackwards {
+  100% {
+    color: grey;
+  }
+  0% {
+    color: white;
+  }
+}
+.page {
+  display: grid;
+  min-height: 100vh;
+}
+
+.page__text {
+  margin: auto;
+}
+
+.text21 {
+  position: relative;
+  /* font-size: clamp(2rem, 5vw, 4rem); */
+  color: rgb(0, 0, 0); /* Ensure the main text color contrasts with the background */
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line {
+  position: relative;
+  display: inline; /* Display as inline to remove spacing between lines */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.line::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: colorChange 2s linear infinite;
+}
+
+
+@keyframes colorChange {
+  0%, 100% {
+    width: 0;
+  }
+  50%, 80% {
+    width: 100%;
+  }
+}
+.header1.insightheader, .header1.companyheader, .header1.contactUsheader, .header1.guideheader, .gagaportalheader {
+height: 560px;
+}
+.header1.companyheader .right-div, .header1.contactUsheader .right-div, .header1.guideheader .right-div,  .gagaportalheader .right-div{
+  height: 420px;
+  width: 35%;
+}
+.gagaportalheader .right-div{
+  width: 50%;
+}
+.header1.companyheader .right-div img, .header1.contactUsheader .right-div img, .header1.guideheader .right-div img, .header1.insightheader .right-div img, .gagaportalheader .right-div img{
+  height: 410px;
+}
+.header1.contactUsheader .right-div img{
+  right: -8px;
+  height: 332px;
+  width: 476px;
+  top: 25px;
+}
+.header1.insightheader .right-div{
+  width: 50%;
+  height: 430px;
+}
+.header1.insightheader .right-div::before, .header1.guideheader .right-div::before, .gagaportalheader .right-div::before, .header1.contactUsheader .right-div::before,.header1.companyheader .right-div::before{
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%), #333E48 100% / cover no-repeat; */
+  opacity: 0;
+}
+/* .header1.companyheader .header, .header1.guideheader .header,.header1.contactUsheader .header, .gagaportalheader .header {
+justify-content: space-around;
+} */
+.header1.guideheader .left-div, .header1.insightheader .left-div, .header1.contactUsheader .left-div, .gagaportalheader .left-div {
+margin: auto 0;
+}
+
+.header1.contactUsheader .header-mainCard {
+  width: 450px;
+}
+.gagaportalheader .header-mainCard{
+  width: 481px;
+}
+.header1.guideheader, .header1.insightheader, .header1.contactUsheader, .gagaportalheader{
+  padding-top: 100px;
+}
+.header1.insightheader .left-div{
+  width: 46%;
+}
+.header1.contactUsheader .right-div{
+  width: 44%;
+}
+
+.header1.companyheader .right-div img{
+  right: 25px;
+}
+.header1.guideheader .right-div{
+  width: 40%;
+  top: -51px;
+}
+.header1.guideheader .right-div img{
+  height: 420px;
+  width: 390px;
+  right: -60px;
+  top: 30px;
+}
+.marquee-img{
+  padding: 0px  20px;
+}
+@media (max-width: 1180px) {
+  .header-mainCard h1 {
+    font-size: 56px;
+  }
+  .header1.insightheader .left-div{
+    width: 46%;
+  }
+}
+@media (min-width: 1181px) and (max-width: 1400px) {
+  .header-mainCard h1 {
+    font-size: 60px;
+  }
+  .right-div img {
+    width: 531px;
+    height: 547px;
+    position: relative;
+    right: -38px;
+}
+.header1.insightheader .left-div{
+  width: 40%;
+}
+}
+@media (max-width: 768px) {
+  .header1 {
+    padding: 16px;
+    padding-top: 76px;
+    padding-bottom: 24px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+  }
+
+  .left-div {
+      width: 100%;
+      height: 286px;
+      z-index: 2;
+  }
+
+  /* .right-div {
+    display: none;
+  } */
+
+  .header-mainCard h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+
+  .header-mainCard {
+    border-radius: 8px;
+    border: 0.746px solid #FFF;
+    padding: 14px;
+    padding-right: 0px;
+    width: 70%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(108deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0.07) 100%);
+    backdrop-filter: blur(3.7291667461395264px);
+  }
+
+  .card {
+    --bs-card-bg: none;
+    border-radius: 0px;
+  }
+
+  .portal-card span, .exchange-card span {
+    display: block;
+    color: #F5F5F5;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+    padding-bottom: 4px;
+    display: none;
+  }
+
+  .portal-card video, .exchange-card video {
+    display: none;
+  }
+
+  .portal-card .card-body, .exchange-card .card-body {
+    border-radius: 8px;
+    border: 0.746px solid #FFF;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(108deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0.07) 100%);
+    backdrop-filter: blur(3.7291667461395264px);
+    padding: 3px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    height: 100px;
+  }
+
+  .header-mainCard p {
+    font-size: 12px;
+  }
+
+  .portal-card h5, .exchange-card h5 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+
+  .portal-card p, .exchange-card p {
+    width: 76px;
+    height: 20px;
+    font-size: 8px;
+  }
+
+  .card-body img {
+    height: 10px;
+    background: #fff;
+    border-radius: 100px;
+    margin-left: 4px;
+    padding: 3px;
+    margin-top: 2px;
+  }
+  .portal-exchange {
+      margin-left: 0px;
+      margin-top: 5px;
+      gap: 5%;
+      width: 70%;
+  }
+  .footer-header p {
+      font-size: 12px;
+      margin-bottom: 7px;
+  }
+  .item-react > img {
+      width: 70px;
+height: 28px;
+  }
+  .item-react-3>img{
+    height: 35px;
+    flex: 1 0 var(--width);
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .item-react {
+      padding: 10px;
+  }
+  .portal-card .card-title, .exchange-card .card-title {
+    font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        align-self: flex-start;
+  }
+  .portal-card .card-body, .exchange-card .card-body {
+
+    height: 116px;
+  }
+  .portal-card video, .exchange-card video {
+    transition: none;
+  }
+  .portal-card, .exchange-card {
+    height: 116px;
+    margin-top: 5px;
+  }
+  .portal-card span, .exchange-card span {
+    display: block;
+    font-size: 8px;
+    padding: 2px;
+        margin-bottom: 5px;
+    
+  }
+   .header1.companyheader .right-div{
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 183px;
+    height: 197px;
+    z-index: 1;
+   }
+   .header1.companyheader .left-div{
+    z-index: 2;
+    height: 100%;
+   }
+  .header1.companyheader .right-div img{
+  width: 183px;
+    height: 197px;
+  }
+ 
+  /* .header1.contactUsheader {
+    background-image: linear-gradient(0deg, rgba(51, 62, 72, 0.50) 0%, rgba(51, 62, 72, 0.50) 100%), url(/src/assets/contactImage.png);
+    background-size: cover;
+    background-position:center; 
+    background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+  } */
+
+  .gagaportalheader .header-mainCard{
+    width: 200px;
+  }
+  .header1.insightheader, .header1.companyheader, .header1.contactUsheader, .header1.guideheader, .gagaportalheader {
+    height: 100%;
+    padding-bottom: 0px;
+    padding-top: 80px;
+  }
+  .button-container button {
+    padding: 7px 10px;
+    padding-right: 4px;
+border-radius: 10px;
+    font-size: 10px;
+}
+.button-svg{
+  height: 10px;
+  width: 25px;
+}
+.right-div{
+  width: 291px;
+height: 264px;
+position: absolute;
+right: 0px;
+z-index: 1;
+}
+.right-div img{
+  width: 291px;
+height: 264px;
+right: 0px;
+}
+.header1.guideheader .right-div{
+  width: 250px;
+  height:320px;
+
+}
+.header1.guideheader .right-div img{
+  width: 305px;
+  height: 320px;
+}
+.header1.insightheader .right-div {
+  width: 251px;
+height: 211px;
+}
+.header1.insightheader .right-div img{
+  width: 251px;
+height: 211px;
+top: 40px;
+}
+.header1.contactUsheader .right-div img{
+  width: 315px;
+height: 226.438px;
+top: 21px;
+        right: 0px;
+}
+.header1.contactUsheader .right-div{
+  width: 315px;
+height: 226.438px;
+/* top: 21px; */
+}
+.header1.contactUsheader .right-div::before{
+  top: 20px;
+}
+.gagaportalheader .right-div{
+  width: 303px;
+  height: 286px;
+}
+.gagaportalheader .right-div img{
+  width: 303px;
+  height: 286px;
+}
+.header1.guideheader .left-div, .header1.insightheader .left-div, .header1.contactUsheader .left-div, .gagaportalheader .left-div {
+  display: flex;
+  justify-content: center;
+}
+.header1.contactUsheader .header-mainCard {
+  width: 60%;
+}
+.right-div::before {
+  left: 0px;
+}
+.header1.guideheader .right-div { 
+  top: 50px; 
+}
+.header1.guideheader .right-div img{
+  right: 0px;
+  height: 268px;
+}
+.header1.insightheader .right-div::before, .header1.guideheader .right-div::before, .gagaportalheader .right-div::before, .header1.contactUsheader .right-div::before, .header1.companyheader .right-div::before {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%), #333E48 100% / cover no-repeat;
+  opacity: 0.4;
+}
+.header1.insightheader .header-mainCard{
+  width: 205px;
+}
+.marquee-img{
+  height: 30px;
+  width: 70px;
+  padding: 0px 10px;
+}
+}
+
+

@@ -1,0 +1,113 @@
+.contactUs{
+ 
+    padding: 50px 80px;
+}
+.contactUs h1{
+    color: #222831;
+font-family: Lato;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.6px;
+text-align: center;
+margin-bottom: 40px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+.contact-main{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 20px;
+    gap: 20px;
+}
+.contact-card {
+    background-color: #333E48;
+    color: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .contact-card p {
+    font-size: 14px;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .icon svg {
+    fill: #fff;
+  }
+  
+  .text1 h3 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .text1 p {
+    margin: 0;
+    font-size: 12px;
+    color: #bbb;
+  }
+  
+  .map {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .map img {
+    width: 100%;
+
+    border-radius: 5px;
+  }
+  @media (max-width: 768px) {
+    .contact-main {
+    flex-direction: column;
+    padding: 0px;
+    gap: 16px;
+    }
+    .contact-card {
+        width: 100%;
+    }
+    .contactUs {
+        padding:  24px 16px;
+    }
+    .contactUs h1 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .contactUs svg{
+        width: 63px;
+    }
+  }
+  
