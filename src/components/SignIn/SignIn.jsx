@@ -5,6 +5,7 @@ import logo from "../../assets/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  let port = 'http://13.233.143.235:8000/'
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     yourEmail: "",
@@ -80,7 +81,7 @@ const SignIn = () => {
     ) {
       try {
         // API call to the signin endpoint
-        const response = await fetch("http://localhost:8000/api/signin", {
+        const response = await fetch(`${port}api/signin`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
